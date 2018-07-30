@@ -4,12 +4,12 @@ The repository contains software library for Data Augmentation Services
 Follow the instructions for executing the scripts and obtaining unbiased augmented datasets
 
 # Requirements
-python 3X
-numpy > 1.13
-scipy > 0.19
-pillow > 5.2
-tensorflow (gpu) > 1.3
-MATLAB
+python 3X  
+numpy > 1.13  
+scipy > 0.19  
+pillow > 5.2  
+tensorflow (gpu) > 1.3  
+MATLAB  
 
 # Stage 1
 Contains two parts (i) Training GAN and (ii) Training Ensemble Classifier
