@@ -49,7 +49,17 @@ You can specify on which labels you want to train your ensemble classifier then 
 
 
 # Stage 2
-Once training of GAN and ensemble classifier is finished move to Stage 2 for filtering synthetic Images and obtaining performance measuer of CNN trained on augmented datasets
+Once training of then GAN and ensemble classifier is finished and outputs are saved in their corresponding locations. You can move to __Stage-2__ for filtering synthetic Images and obtaining performance measuer of CNN trained on augmented datasets.  
 
+## Filter Unbiased Images
+Execute Filter_Images.m file to filter the synthetic images by trained ensemble classifier.  
+
+Path of the training data, the saved model, and the generated data is required. They are already set, but if you change the save path of any file then please modify them as below:  
+__Line 16, path of the trained ensemble classifier's model__  
+__Line 17, path of the training data__  
+__Line 78, path of the generated data__  
+
+Once the code terminates output file named __Batches_alpha_CategoryA_CategoryB__ will be saved in ./Stage-2/Filter_Unbiased_Images/Filtered_Images/  
+This file contains the test data andits labels, batches of training and filter images for 3-fold cross-validation.   
 
 
