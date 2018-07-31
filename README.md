@@ -1,5 +1,5 @@
 # ADMA Demo 2018
-The repository contains software library for Data Augmentation Services 
+The repository contains software library for __Data Augmentation Services__
 
 # Requirements
 python 3.x  
@@ -21,7 +21,7 @@ python main.py
 
 This will download CIFAR-10 dataset automatically to the path specified.
 The GAN will be trained for category 0 against all with the default parameters specified in the file main.py.
-Synthetically Generated Images and associated Labels will be saved in __./Geneated_Data folder__.
+Synthetically Generated Images and associated Labels will be saved in __./Geneated_Data folder__.  
 Example files already exists, __./Generated_Data/Images_10_1_2.mat__ and __./Generated_Data/Labels_10_0_1.mat__
 
 Naming Convention Images_alpha_CategoryA_CategoryB and similarly Labels_alpha_CategoryA_CategoryB
