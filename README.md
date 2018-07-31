@@ -26,27 +26,27 @@ Example files already exists, __./Generated_Data/Images_10_1_2.mat__ and __./Gen
 
 Naming Convention Images_alpha_CategoryA_CategoryB and similarly Labels_alpha_CategoryA_CategoryB
 
-If you wish to change the categories on which GAN is trained then please edit file DCGAN_Modified.py
+If you wish to change the categories on which GAN is trained then please edit file DCGAN_Modified.py  
 **Line 162, fixed_label = 0** and
-**Line 163, iter_labels = np.arange((fixed_label + 1), 10)**
+**Line 163, iter_labels = np.arange((fixed_label + 1), 10)**  
 
-If you want to specify the split ratio of training dataset while training GAN then edit
-** Line 159 **  alpha = 0.1
-
-
-*** Command line arguments ***** coming soon
+If you want to specify the split ratio of training dataset while training GAN then edit  
+**Line 159, alpha = 0.1**  
 
 ## Train Ensemble Classifieris
 We train SVM, k-NN and naive Bayes available at MATLAB-R2018a
-The codes are in the folder Train_EnsemClass
+The codes are in the folder __Train_EnsemClass__  
 
-execute TrainEnsemble.m 
+To train Ensemble classifier execute __TrainEnsemble.m__   
 
-Trained parameters of the classifier's will get save in a mat file "MODEL_X_Y.mat"
+Trained parameters of the classifier's will get save in a mat file __MODEL_X_Y.mat__, example file exists in the folder   
 X : Category 1
-Y : Category 2
+Y : Category 2  
 
-*** Arguments description coming soon *****
+You can specify on which labels you want to train your ensemble classifier then edit file __TrainEnsemble.m__  
+**Line 14, fixed_label = 1**  
+**Line 15, selected_labels = [(fixed_label+1):10]**  
+
 
 # Stage 2
 Once training of GAN and ensemble classifier is finished move to Stage 2 for filtering synthetic Images and obtaining performance measuer of CNN trained on augmented datasets
