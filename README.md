@@ -59,7 +59,8 @@ __Line 16, path of the trained ensemble classifier's model__
 __Line 17, path of the training data__  
 __Line 78, path of the generated data__  
 
-Once the code terminates output file named __Batches_alpha_CategoryA_CategoryB__ will be saved in ./Stage-2/Filter_Unbiased_Images/Filtered_Images/  
-This file contains the test data andits labels, batches of training and filter images for 3-fold cross-validation.   
+Once the code terminates output file named __Batches_alpha_CategoryA_CategoryB__ will be saved in  
+*./Stage-2/Filter_Unbiased_Images/Filtered_Images/*  
+This file contains the test data and its labels, batches of training and filter images for 3-fold cross-validation.   
 
 
