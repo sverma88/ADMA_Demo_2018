@@ -39,7 +39,7 @@ We train SVM, k-NN and naive Bayes available at MATLAB-R2018a
 The codes and necessary functions are in the folder __DAS/Stage-1/Train_EnsemClass/__  
 
 Trained parameters of the classifier's will get save in a mat file __DAS/Stage-1/TrainEnsemClass__, example file exists in the folder name __MODEL_X_Y.mat__   
-X : Category 1
+X : Category 1  
 Y : Category 2  
 
 You can specify on which labels you want to train your ensemble classifier then edit file __TrainEnsemble.m__  
@@ -68,12 +68,13 @@ Execute __python main.py__ on the terminal to train VGG-style CNN adopted from h
 This will train the CNN on Augmenetd dataset obtained from the filtering stage i.e. __Stage - 2__ of __Data Augmentation Services__  
 The outputs will get saved in __DAS/Stage-2/Train_CNN/results__ folder with name __Accuracy_alpha_CategoryA_CategoryB__ and __Pred_Labels_alpha_CategoryA_CategoryB__.
 
-If you wish to train the CNN on true training CIFAR dataset then please edit the main.py script  
+If you wish to train the CNN on true training CIFAR dataset then edit the script __main.py__    
 __Line 5, change from VGG_CNN_CIFAR import VGG to from VGG_CNN_Baseline import VGG__  
 
 ## Calculate Performace Measures
-The final step is to obtain the measures of the bias, the variance and, the accuracy of our model after training on the augmenetd dataset.  
-Please execute Calculate_Performace.m. It requires path to the directory where results after saved by the CNN model and the path to the directory where the augmeneted data is stored.  
+Execute the main MATLAB script __DAS/Stage-2/Calculate_Bias_Variance/Calculate_Performace.m__ to obtain the measures of the bias, the variance and, the accuracy of our model after training on the augmenetd dataset.  
+
+The script requires path to the directory where results after saved by the CNN model and the path to the directory where the augmeneted data is stored. Both the paramters are at the following Line numbers in the script
 
 **Line 5, path to the CNN results directory**  
 **Line 6, path to the augmented dataset**
