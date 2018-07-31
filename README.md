@@ -2,7 +2,7 @@
 The repository contains software library for Data Augmentation Services 
 
 # Requirements
-python 3X  
+python 3.x  
 numpy > 1.13  
 scipy > 0.19  
 pillow > 5.2  
@@ -21,14 +21,14 @@ python main.py
 
 This will download CIFAR-10 dataset automatically to the path specified.
 The GAN will be trained for category 0 against all with the default parameters specified in the file main.py.
-Synthetically Generated Images and associated Labels will be saved in ./Geneated_Data folder.
-Example files already exists, ./Generated_Data/Images_10_1_2.mat and ./Generated_Data/Labels_10_0_1.mat
+Synthetically Generated Images and associated Labels will be saved in __./Geneated_Data folder__.
+Example files already exists, __./Generated_Data/Images_10_1_2.mat__ and __./Generated_Data/Labels_10_0_1.mat__
 
 Naming Convention Images_alpha_CategoryA_CategoryB and similarly Labels_alpha_CategoryA_CategoryB
 
 If you wish to change the categories on which GAN is trained then please edit file DCGAN_Modified.py
-** Line 162 ** fixed_label = 0 and
-** Line 163 ** iter_labels = np.arange((fixed_label + 1), 10)
+**Line 162, fixed_label = 0** and
+**Line 163, iter_labels = np.arange((fixed_label + 1), 10)**
 
 If you want to specify the split ratio of training dataset while training GAN then edit
 ** Line 159 **  alpha = 0.1
