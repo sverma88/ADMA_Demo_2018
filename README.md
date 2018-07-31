@@ -14,9 +14,9 @@ Contains two parts (i) Training GAN and (ii) Training Ensemble Classifier
 
 ## Train GAN
 We provide modified version of DCGAN taken from https://github.com/carpedm20/DCGAN-tensorflow
-The discriminator and the generator are conditioned on the labels of the images and have less layers.
+The discriminator and the generator are conditioned on the labels of the images and have less layers than the DCGAN model available at the link above.
 
-To execute the GAN and generate images type
+To execute the GAN and generate images go to DAS/Stage-1/Train_GAN/ and execute the main file by typing the command on the terminal  
 python main.py 
 
 This will download CIFAR-10 dataset automatically to the path specified.
