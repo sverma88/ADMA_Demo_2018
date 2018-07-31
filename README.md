@@ -63,4 +63,20 @@ Once the code terminates output file named __Batches_alpha_CategoryA_CategoryB__
 *./Stage-2/Filter_Unbiased_Images/Filtered_Images/*  
 This file contains the test data and its labels, batches of training and filter images for 3-fold cross-validation.   
 
+## Train CNN on Augmented datasets 
+To train VGG-style CNN adopted from https://github.com/soumith/DeepLearningFrameworks/blob/master/Tensorflow_CIFAR.ipynb type
+python main.py  
+This will train the CNN on Augmenetd dataset obtained from the filtering stage of __Data Augmentation Services__  
+The outputs will get saved in __Train_CNN/results__ folder with name __Accuracy_alpha_CategoryA_CategoryB__ and __Pred_Labels_alpha_CategoryA_CategoryB__.
+
+If you wish to train the CNN on true training CIFAR dataset then please edit the main.py script  
+__Line 5, change from VGG_CNN_CIFAR import VGG to from VGG_CNN_Baseline import VGG__  
+
+## Calculate Performace Measures
+The final step is to obtain the measures of the bias, the variance and, the accuracy of our model after training on the augmenetd dataset.  
+Please execute Claculate_Performace.m. It requires path to the directory where results after saved by the CNN model and the path to the directory where the augmeneted data is stored.  
+
+**Line 5, path to the CNN results directory**  
+**Line 6, path to the augmented dataset**
+
 
