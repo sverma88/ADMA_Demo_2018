@@ -13,10 +13,12 @@ MATLAB
 Contains two parts (i) Training GAN and (ii) Training Ensemble Classifier
 
 ## Train GAN
-We provide modified version of DCGAN taken from https://github.com/carpedm20/DCGAN-tensorflow
-The discriminator and the generator are conditioned on the labels of the images and have less layers than the DCGAN model available at the link above.
+Execute the python script __main.py__ located at __DAS/Stage-1/Train_GAN/__ by typing the command on the terminal  
+python main.py 
 
-To execute the GAN and generate images go to DAS/Stage-1/Train_GAN/ and execute the main file by typing the command on the terminal python main.py 
+We provide modified version of DCGAN taken from https://github.com/carpedm20/DCGAN-tensorflow
+The discriminator and the generator are conditioned on the labels of the images and have less layers than the DCGAN model available at the link above. The code __DCGAN_Modified.py__ is located at __DAS/Stage-1/Train_GAN/__
+
 
 This will download CIFAR-10 dataset automatically to the path specified.
 The GAN will be trained for category 0 against all with the default parameters specified in the file main.py.
